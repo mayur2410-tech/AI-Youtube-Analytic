@@ -62,18 +62,30 @@ export function AppSidebar() {
     const path = usePathname();
     return (
         <Sidebar>
-            <SidebarHeader>
-                <div className='p-4'>
-                    <Image src={'./logo.svg'} alt='logo' width={100} height={100}
-                        className='w-full h-full' />
-                    <h2 className='text-sm text-gray-400 text-center'>Build Awesome</h2>
+               <SidebarHeader className="flex flex-col items-center py-4">
+                <div className="flex items-center mr-14 -mt-4">
+                    <Image
+                        src="/logo.png" // your cropped logo image
+                        alt="RankTube Logo"
+                        width={80}
+                        height={80}
+                        className="object-contain"
+                        priority
+                    />
+                    <h1 className="text-xl font-bold">
+                        <span className="text-red-500">Rank</span>
+                        <span className="text-black">Tube</span>
+                    </h1>
                 </div>
+                {/* <p className="text-gray-500 text-xs">Build Awesome</p> */}
             </SidebarHeader>
+
+
             <SidebarContent>
                 <SidebarGroup>
 
                     <SidebarGroupContent>
-                        <SidebarMenu className='mt-5'>
+                        <SidebarMenu >
                             {items.map((item, index) => (
                                 // <SidebarMenuItem key={item.title} className='p-2'>
                                 //     <SidebarMenuButton asChild className=''>
@@ -90,7 +102,7 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
             <SidebarFooter>
-                <h2 className='p-2 text-gray-400 text-sm'>Copyright @Tubeguruji</h2>
+                {/* <h2 className='p-2 text-gray-400 text-sm'>Copyright @Tubeguruji</h2> */}
             </SidebarFooter>
         </Sidebar>
     )
