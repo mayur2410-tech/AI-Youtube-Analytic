@@ -11,7 +11,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { BookType, Calendar, ChartNoAxesColumn, Gauge, Home, ImageIcon, Inbox, Lightbulb, Search, Settings, User2 } from "lucide-react"
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
@@ -22,24 +22,39 @@ const items = [
         icon: Home,
     },
     {
-        title: "Inbox",
+        title: "Thunmbnail Generator",
         url: "#",
-        icon: Inbox,
+        icon: ImageIcon,
     },
     {
-        title: "Calendar",
+        title: "Keywords",
         url: "#",
-        icon: Calendar,
+        icon: BookType,
     },
     {
-        title: "Search",
+        title: "Potimize",
         url: "#",
-        icon: Search,
+        icon: ChartNoAxesColumn,
     },
     {
-        title: "Settings",
+        title: "Outlier",
+        url: "#",
+        icon: Gauge,
+    },
+    {
+        title: "AI Content Generator",
+        url: "#",
+        icon: Lightbulb,
+    },
+    {
+        title: "Billing",
         url: "#",
         icon: Settings,
+    },
+    {
+        title: "Profile",
+        url: "#",
+        icon: User2,
     },
 ]
 
